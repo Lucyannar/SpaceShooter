@@ -74,7 +74,7 @@ function moveLaser(laser) {
             }
         })
 
-        if (xPosition === 340) {
+        if (xPosition === 500) {
             laser.remove();
         } else {
             laser.style.left = `${xPosition + 8}px`;
@@ -89,7 +89,7 @@ function createAliens() {
     newAlien.src = alienSprite;
     newAlien.classList.add('alien');
     newAlien.classList.add('alien-transition');
-    newAlien.style.left = '370px';
+    newAlien.style.left = '700px';
     newAlien.style.top = `${Math.floor(Math.random() * 330) + 30}px`;
     playArea.appendChild(newAlien);
     moveAlien(newAlien);
@@ -119,7 +119,7 @@ function checkLaserCollision(laser, alien) {
     let alienTop = parseInt(alien.style.top);
     let alienLeft = parseInt(alien.style.left);
     let alienBottom = alienTop - 30;
-    if (laserLeft != 340 && laserLeft + 40 >= alienLeft) {
+    if (laserLeft != 500 && laserLeft + 40 >= alienLeft) {
         if (laserTop <= alienTop && laserTop >= alienBottom) {
             return true;
         } else {

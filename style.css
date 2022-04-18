@@ -7,29 +7,47 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background-color: cornflowerblue;
+    background-image: linear-gradient(to right bottom, #6495ed, #4a71d0, #344eb2, #212a92, #0f0071);
 }
 
 #main-play-area {
     background-color: black;
     background-image: url(img/space.png);
-    height: 600px;
-    width: 600px;
+    height: 650px;
+    width: 1000px;
+    justify-content: center;
 }
 
 .game-instructions {
     position: relative;
     color: white;
-    left: 7rem;
-    top: 0px;
+    /* left: 20rem;
+    top: 0px; */
+    justify-content: center;
+    margin: 0 10% 0 30%;
+}
+
+.instructions {
+    margin: 0 10% 0 -10%;
+}
+
+.title-game {
+    font-size: 50px;
+    background: linear-gradient(to left top, #8a2be2, #ae44e1, #ca5ee0, #e17ae2, #f396e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .start-button {
     position: relative;
-    color: white;
-    top: 9rem;
-    left: 15rem;
+    top: 10rem;
+    left: 28rem;
     cursor: pointer;
+    background: linear-gradient(to left top, #8a2be2, #ae44e1, #ca5ee0, #e17ae2, #f396e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .player-shooter {
